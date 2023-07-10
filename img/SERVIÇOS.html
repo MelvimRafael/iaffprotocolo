@@ -1,0 +1,28 @@
+
+<!-- saved from url=(0049)http://localhost/novoService/novoService/card.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SERVIÇOS</title>
+    <link rel="stylesheet" href="./SERVIÇOS_files/ver_servico.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="./SERVIÇOS_files/logo ret.png" alt="Logo" class="logo">
+        <div class="search-container">
+        <form method="GET" action="http://localhost/novoService/novoService/card.php">
+            <input type="text" placeholder="Pesquisar..." name="search">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+        </form>
+    </div>
+    </nav>
+   
+    <br>
+<b>Fatal error</b>:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\novoService\novoService\configuracao.php:8
+Stack trace:
+#0 C:\xampp\htdocs\novoService\novoService\configuracao.php(8): mysqli-&gt;__construct('Localhost', 'root', Object(SensitiveParameterValue), 'servico_oficial')
+#1 C:\xampp\htdocs\novoService\novoService\card.php(28): include_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in <b>C:\xampp\htdocs\novoService\novoService\configuracao.php</b> on line <b>8</b><br>
+</body></html>
